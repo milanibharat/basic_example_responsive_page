@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Example for frontend</title>
+        <link rel='stylesheet' href='css/main.css'>
+    </head>
+    <body>
+        <div class='container'>
+            <header>
+                <img src='images/real-business.jpg' alt='real-business' class='logo'>
+                <nav>
+                    <a href='#' class='hide-desktop'>
+                        <img src='images/menu-512.png' alt='toggle menu' class='menu' id='menu'>
+                    </a>
+
+                    <ul class='show-desktop hide-mobile' id='nav'>
+                        <li id='exit' class='exit-btn hide-desktop'><img src='images/exit.png' alt='exit menu'></li>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>Services</a></li>
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <img src='images/agency-registration.jpg' alt='agency-registration' class='server'>
+
+                <h1>Web Hosting for New Era</h1>
+                <p class='subhead'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <img src='images/controls_0-43-512.png' alt='scroll control' class='scroll hide-mobile show-desktop'>
+            </section>
+        </div>
+
+        <div class='blue-container'>
+            <div class='container'>
+                <ul>
+                    <li>
+                        <img src='images/icon-international-events.jpg' alt='doc icon'>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at 
+                            its layout. </p>
+                    </li>
+                    <li>
+                        <img src='images/57e14b474aeaf_file.jpg' alt='calender icon'>
+                        <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+                            unchanged. </p>
+                    </li>
+                    <li>
+                        <img src='images/57e14b403328c_file.jpg' alt='print icon'>
+                        <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words 
+                            etc. </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='gray-container'>
+            <div class='container'>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src='images/icon-candidates-available.jpg' alt='user1'>
+                            <blockquote>de Finibus Bonorum et Malorum</blockquote>
+                            <figcaption>written by Cicero</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src='images/icon-candidates-available.jpg' alt='user2'>
+                            <blockquote>de Finibus Bonorum et Malorum</blockquote>
+                            <figcaption>written by hygion</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src='images/icon-candidates-available.jpg' alt='user2'>
+                            <blockquote>de Finibus Bonorum et Malorum</blockquote>
+                            <figcaption>written by hygion</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='container'>
+            <h2>Start you Trail Now</h2>
+            <a href='#' class='cta'>Get Started</a>
+        </div>
+
+        <footer>
+            <div class='footer-container'>
+                <div class='container'>
+                    <a href='#'>
+                        <img class='logo' alt='logo' src='images/57c6e2112b0fc_file.jpg'>
+                    </a>
+                    <p class='address'>ABC, 604A <br>India</p>
+                    <ul class='footer-links'>
+                        <li><a href='#'>Terms of Service</a></li>
+                        <li><a href='#'>Privacy Policy</a></li>
+                    </ul>          
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var menu=document.getElementById('menu');
+            var nav=document.getElementById('nav');
+            var exit=document.getElementById('exit');
+            
+            menu.addEventListener('click',function(e){
+               nav.classList.toggle('hide-mobile');
+               e.preventDefault();
+            });
+            
+             exit.addEventListener('click',function(e){
+               nav.classList.add('hide-mobile');
+               e.preventDefault();
+            });
+        </script>
+    </body>
+</html>
